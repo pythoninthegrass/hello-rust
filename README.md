@@ -1,7 +1,5 @@
 # hello-rust
 
-[![Crates.io](https://img.shields.io/crates/v/hello-rust.svg)](https://crates.io/crates/hello-rust)
-[![Docs.rs](https://docs.rs/hello-rust/badge.svg)](https://docs.rs/hello-rust)
 [![CI](https://github.com/pythoninthegrass/hello-rust/workflows/CI/badge.svg)](https://github.com/pythoninthegrass/hello-rust/actions)
 
 ## Setup
@@ -10,8 +8,41 @@
 
 * Install the rust toolchain in order to have cargo installed by following
   [this](https://www.rust-lang.org/tools/install) guide.
-* run `cargo install hello-rust`
+* Install `hello-rust` via
+    ```bash
+    # remote
+    cargo install --git https://github.com/pythoninthegrass/hello-rust
 
+    # local
+    cargo install --path .
+    ```
+
+## Development
+
+### Setup
+
+* Follow the [setup instructions](#setup) above to set up your environment
+* Install [devbox](https://www.jetpack.io/devbox/docs/quickstart/)
+    ```bash
+    curl -fsSL https://get.jetpack.io/devbox | bash
+    ```
+
+### Usage
+
+* Basic commands
+    ```bash
+    # install dependencies
+    devbox install
+
+    # enter devbox
+    devbox shell
+
+    # refresh devbox after making changes to devbox.json
+    refresh
+
+    # deactivate devbox
+    exit
+    ```
 
 ## Further reading
 
