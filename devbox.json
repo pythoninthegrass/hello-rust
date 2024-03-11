@@ -1,0 +1,32 @@
+{
+  "packages": [
+    "asdf-vm@latest",
+    "docker@latest",
+    "gh@latest",
+    "git@latest",
+    "gnumake@latest",
+    "go-task@latest",
+    "libiconv@latest",
+    "nodejs@21.4.0",
+    "openssl@latest",
+    "rustup@latest",
+    "tilt@latest"
+  ],
+  "env": {},
+  "shell": {
+    "init_hook": [
+      "projectDir=$(dirname $(readlink -f \"$0\"))",
+      "rustupHomeDir=\"$projectDir\"/.rustup",
+      "mkdir -p $rustupHomeDir",
+      "export RUSTUP_HOME=$rustupHomeDir",
+      "export LIBRARY_PATH=$LIBRARY_PATH:\"$projectDir/nix/profile/default/lib\"",
+      "rustup default stable",
+      "cargo fetch"
+    ],
+    "scripts": {
+      "test": "cargo test -- --show-output",
+      "start": "cargo run",
+      "build-docs": "cargo doc"
+    }
+  }
+}

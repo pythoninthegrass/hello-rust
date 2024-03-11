@@ -1,0 +1,10 @@
+[toolchain]
+channel = "1.76.0"
+components = [ "rustfmt", "rustc-dev" ]
+targets = [
+    "aarch64-apple-darwin",
+    "aarch64-unknown-linux-gnu",
+    "x86_64-apple-darwin",
+    "x86_64-unknown-linux-gnu"
+]
+profile = "minimal"
