@@ -12,7 +12,6 @@ fn main() {
     // pairs into a vector
     let dotenv_vars: Vec<_> = dotenvy::dotenv_iter().unwrap().map(|x| x.unwrap()).collect();
 
-
     // Print env vars to stdout
     match dotenv() {
         Ok(_) => {
