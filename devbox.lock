@@ -177,6 +177,7 @@
     },
     "rustup@latest": {
       "last_modified": "2024-02-24T23:06:34Z",
+      "plugin_version": "0.0.1",
       "resolved": "github:NixOS/nixpkgs/9a9dae8f6319600fa9aebde37f340975cab4b8c0#rustup",
       "source": "devbox-search",
       "version": "1.26.0",
