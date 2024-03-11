@@ -12,15 +12,20 @@ fn main() {
     // pairs into a vector
     let dotenv_vars: Vec<_> = dotenvy::dotenv_iter().unwrap().map(|x| x.unwrap()).collect();
 
+
     // Print env vars to stdout
     match dotenv() {
         Ok(_) => {
-            // If .env file loaded successfully, greet the user
-            if let Some((_, value)) = env_vars.iter().find(|(key, _)| key == "NAME") {
-                println!("Hello, {}!\n", value);
-            } else {
-                println!("Hello, world!\n");
-            }
+            // If env var is found, greet the user
+            let name = env_vars
+                .iter()
+                .chain(dotenv_vars.iter())
+                .find(|(key, _)| key == "NAME")
+                .map(|(_, value)| value.to_string())
+                .unwrap_or("world".to_string());
+
+            println!("Hello, {}!\n", name);
+
             // read env vars from env::vars()
             println!("env vars:");
             for (key, value) in &env_vars {
@@ -29,6 +34,7 @@ fn main() {
                 }
             }
             println!();
+
             // read env vars from dotenvy::dotenv_iter()
             println!("dotenv vars:");
             for (key, value) in &dotenv_vars {
