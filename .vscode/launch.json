@@ -22,7 +22,8 @@
             "args": [],
             "cwd": "${workspaceFolder}",
             "env": {
-                "NAME": "pythoninthegrass"
+                "NAME": "pythoninthegrass",
+                "FUBAR": "testofferson"
             }
         },
         {
