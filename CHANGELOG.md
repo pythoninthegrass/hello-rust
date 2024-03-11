@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1](https://github.com/pythoninthegrass/hello-rust/compare/hello-rust-v0.2.0...hello-rust-v0.2.1) (2024-03-11)
+
+
+### Bug Fixes
+
+* store env vars as vectors ([e1510d5](https://github.com/pythoninthegrass/hello-rust/commit/e1510d5d9d217c7774feb550a8137b9b28bf3ea4))
+
 ## [0.2.0](https://github.com/pythoninthegrass/hello-rust/compare/hello-rust-v0.1.0...hello-rust-v0.2.0) (2024-03-11)
 
 
