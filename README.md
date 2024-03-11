@@ -37,6 +37,15 @@
     # enter devbox
     devbox shell
 
+    # run app
+    devbox run start
+
+    # run tests
+    devbox run test
+
+    # create documentation
+    devbox run build-docs
+
     # refresh devbox after making changes to devbox.json
     refresh
 
