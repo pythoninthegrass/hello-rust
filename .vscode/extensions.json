@@ -12,6 +12,7 @@
     "ms-kubernetes-tools.vscode-kubernetes-tools",
     "ms-vsliveshare.vsliveshare",
     "redhat.vscode-yaml",
+    "rust-lang.rust-analyzer",
     "ryu1kn.partial-diff",
     "timonwong.shellcheck",
     "yzhang.markdown-all-in-one"
