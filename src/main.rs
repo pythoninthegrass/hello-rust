@@ -10,7 +10,11 @@ fn main() {
     // dotenvy iterator returns result, unwrap to get the value, map
     // extracts the value from the result, and collect key/value
     // pairs into a vector
-    let dotenv_vars: Vec<_> = dotenvy::dotenv_iter().unwrap().map(|x| x.unwrap()).collect();
+    let dotenv_vars:
+        Vec<_> = dotenvy::dotenv_iter()
+            .unwrap()
+            .map(|x| x.unwrap())
+            .collect();
 
     // Print env vars to stdout
     match dotenv() {
